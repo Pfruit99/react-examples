@@ -1,6 +1,7 @@
 // usar comando rafce 
 
 import React from 'react';
+import '../styles/global.scss';
 
 const App = () => {
   return (
