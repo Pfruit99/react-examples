@@ -10,6 +10,8 @@ import RecoveryPassword from '../containers/RecoveryPassword';
 
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
+import Header from '../components/Header';
+
 
 import '../styles/global.scss';
 
@@ -17,6 +19,7 @@ function App() {
   return (
     <BrowserRouter>
         <Layout>
+        <Header></Header>
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
