@@ -1,7 +1,6 @@
 // usar comando rafce 
 import { render } from "react-dom";
 import React from 'react';
-import '../styles/global.css';
 
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Layout  from '../containers/Layout';
@@ -22,8 +21,8 @@ import Orders from '../pages/Orders';
 import Checkout from '../pages/Checkout';
 import NotFound from '../pages/NotFound';
 
+import '../styles/global.scss';
 
-import '../styles/global.css';
 
 
 
@@ -50,7 +49,7 @@ function App() {
           <Route path="/Newpassword" element={<Newpassword/>}></Route>
           <Route path="/Emailsending" element={<Emailsending/>}></Route>
           <Route path="/Orders" element={<Orders/>}></Route>
-          
+
           <Route path="/Checkout" element={<Checkout/>}></Route>          
           <Route path="*" element={<NotFound />} />
       </Routes>

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Myaccount.scss';
 
-const MyAccount = () => {
+const Account = () => {
 	return (
 		<div className="MyAccount">
 			<div className="MyAccount-container">
