@@ -21,7 +21,9 @@ import Emailsending from '../pages/Emailsending';
 import Orders from '../pages/Orders';
 import Checkout from '../pages/Checkout';
 import NotFound from '../pages/NotFound';
-import Orders from "../pages/Orders";
+
+
+import '../styles/global.css';
 
 
 
@@ -29,7 +31,10 @@ import Orders from "../pages/Orders";
 
 
 
-import '../styles/global.scss';
+
+
+
+
 
 function App() {
   return (
@@ -45,7 +50,8 @@ function App() {
           <Route path="/Newpassword" element={<Newpassword/>}></Route>
           <Route path="/Emailsending" element={<Emailsending/>}></Route>
           <Route path="/Orders" element={<Orders/>}></Route>
-                    
+          
+          <Route path="/Checkout" element={<Checkout/>}></Route>          
           <Route path="*" element={<NotFound />} />
       </Routes>
         </Layout>
