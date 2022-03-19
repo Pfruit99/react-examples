@@ -14,13 +14,21 @@ module.exports ={
     }, mode: 'development',
     resolve:{
         extensions:['.js','.jsx'],
+        alias:{
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@containers': path.resolve(__dirname, 'src/containers/'),
+            '@styles': path.resolve(__dirname, 'src/asset/styles/'),
+            '@icons': path.resolve(__dirname, 'src/asset/icons/'),
+            '@logos': path.resolve(__dirname, 'src/asset/logos/'),
+
+        }
     },
     module:{rules:[{ test: /\.(js|jsx)$/,  exclude: /node_modules/,
     use:{loader: 'babel-loader'}},{ test: /\.html$/, use:[{loader: 'html-loader'}]},
     
     {test: /\.(csss|scss)$/, use:["style-loader","css-loader","sass-loader"]}, {
       
-        test: /\.(png|jpg|svg|jpeg|webp)$/,
+        test: /\.(png|jpg|svg|jpeg|webp|gif)$/,
     /*aquí en test agregas la expresión regular para procesar los diferentes tipos de imagenes que tengas.*/
         type: 'asset/resource',
         generator: {
