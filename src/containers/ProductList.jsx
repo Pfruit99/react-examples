@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductItem from '../components/productitem';
-import '../styles/productlist.scss';
+import '@styles/productlist.scss';
 
 const ProductList = () => {
 	return (
