@@ -15,6 +15,8 @@
   "author": "Pfuit99 <mora099999@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "axios": "^0.26.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-player": "^2.9.0",
