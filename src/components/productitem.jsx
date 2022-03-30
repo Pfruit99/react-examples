@@ -5,10 +5,10 @@ import addTocart from '@icons/bt_add_to_cart.svg';
 
 
 const productitem = () => {
-	const [cart, setCart] = useState('hola');
+	const [cart, setCart] = useState([]);
 
 	const handleClick =()=> {
-		setCart('se esta cambiando la info');
+		setCart([]);
 	} 
 
 	return (
@@ -22,7 +22,7 @@ const productitem = () => {
 				<figure onClick={handleClick}>
 					<img src={addTocart} alt="" />
 				</figure>
-				{cart}
+				
 			</div>
 		</div>
 	);
