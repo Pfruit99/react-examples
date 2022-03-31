@@ -20,7 +20,7 @@ module.exports ={
             '@styles': path.resolve(__dirname, 'src/styles/'),
             '@icons': path.resolve(__dirname, 'src/asset/icons/'),
             '@logos': path.resolve(__dirname, 'src/asset/logos/'),
-
+            '@hooks': path.resolve(__dirname, 'src/hooks/'),
         }
     },
     module:{rules:[{ test: /\.(js|jsx)$/,  exclude: /node_modules/,
