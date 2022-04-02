@@ -6,10 +6,10 @@ import addTocartImage from '@icons/bt_add_to_cart.svg';
 
 
 const productitem = ({product}) => {
-	const {addTocart} = useContext(AppContext);
+	const {addToCart} = useContext(AppContext);
 
-	const handleClick =(item)=> {
-		addTocart(item);
+	const handleClick = item => {
+		addToCart(item);
 	} 
 
 	return (
