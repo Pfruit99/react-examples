@@ -21,6 +21,8 @@ module.exports ={
             '@icons': path.resolve(__dirname, 'src/asset/icons/'),
             '@logos': path.resolve(__dirname, 'src/asset/logos/'),
             '@hooks': path.resolve(__dirname, 'src/hooks/'),
+            '@pages': path.resolve(__dirname,'src/pages/'),
+            '@context': path.resolve(__dirname, 'src/context/'),
         }
     },
     module:{rules:[{ test: /\.(js|jsx)$/,  exclude: /node_modules/,
